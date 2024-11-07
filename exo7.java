@@ -1,7 +1,5 @@
-// Fichier Tableaux.java
 public class Tableaux {
 
-    // Méthode pour afficher un tableau de tableaux
     public void affiche(double[][] t) {
         for (double[] ligne : t) {
             for (double val : ligne) {
@@ -9,7 +7,8 @@ public class Tableaux {
             }
             System.out.println();
         }
-    }// Fichier Tableaux.java
+    }
+    
     public class Tableaux {
     
         // Méthode pour afficher un tableau 2D
@@ -22,7 +21,6 @@ public class Tableaux {
             }
         }
     
-        // Méthode pour vérifier si un tableau 2D est régulier
         public boolean regulier(double[][] t) {
             int taille = t[0].length;
             for (double[] ligne : t) {
@@ -33,7 +31,6 @@ public class Tableaux {
             return true;
         }
     
-        // Méthode pour calculer la somme des lignes d'un tableau 2D
         public double[] sommeLignes(double[][] t) {
             double[] sommes = new double[t.length];
             for (int i = 0; i < t.length; i++) {
@@ -44,7 +41,6 @@ public class Tableaux {
             return sommes;
         }
     
-        // Méthode pour calculer la somme de deux tableaux 2D
         public double[][] somme(double[][] t1, double[][] t2) {
             if (!regulier(t1) || !regulier(t2) || t1.length != t2.length || t1[0].length != t2[0].length) {
                 return null;
@@ -58,7 +54,6 @@ public class Tableaux {
             return resultat;
         }
     
-        // Méthode main pour tester la classe
         public static void main(String[] args) {
             Tableaux tableaux = new Tableaux();
             double[][] t1 = {{1.0, 2.0}, {3.0, 4.0}};
@@ -88,7 +83,6 @@ public class Tableaux {
     }
     
 
-    // Méthode pour vérifier si un tableau de tableaux est régulier
     public boolean regulier(double[][] t) {
         int taille = t[0].length;
         for (double[] ligne : t) {
@@ -99,7 +93,6 @@ public class Tableaux {
         return true;
     }
 
-    // Méthode pour calculer la somme des lignes d'un tableau de tableaux
     public double[] sommeLignes(double[][] t) {
         double[] sommes = new double[t.length];
         for (int i = 0; i < t.length; i++) {
@@ -110,4 +103,3 @@ public class Tableaux {
         return sommes;
     }
 
-    // Méthode pour calculer la somme de deux tableaux de
