@@ -1,7 +1,5 @@
-// Fichier Tableaux.java
 public class Tableaux {
-
-    // Méthode statique pour afficher un tableau de tableaux
+ 
     public static void affiche(double[][] t) {
         for (double[] ligne : t) {
             for (double val : ligne) {
@@ -11,7 +9,7 @@ public class Tableaux {
         }
     }
 
-    // Méthode statique pour vérifier si un tableau de tableaux est régulier
+
     public static boolean regulier(double[][] t) {
         int taille = t[0].length;
         for (double[] ligne : t) {
@@ -22,7 +20,6 @@ public class Tableaux {
         return true;
     }
 
-    // Méthode statique pour calculer la somme des lignes d'un tableau de tableaux
     public static double[] sommeLignes(double[][] t) {
         double[] sommes = new double[t.length];
         for (int i = 0; i < t.length; i++) {
@@ -33,7 +30,6 @@ public class Tableaux {
         return sommes;
     }
 
-    // Méthode statique pour calculer la somme de deux tableaux de tableaux
     public static double[][] somme(double[][] t1, double[][] t2) {
         if (!regulier(t1) || !regulier(t2) || t1.length != t2.length || t1[0].length != t2[0].length) {
             return null;
@@ -47,7 +43,6 @@ public class Tableaux {
         return resultat;
     }
 
-    // Méthode main pour tester la classe
     public static void main(String[] args) {
         double[][] t1 = {{1.0, 2.0}, {3.0, 4.0}};
         double[][] t2 = {{5.0, 6.0}, {7.0, 8.0}};
