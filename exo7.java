@@ -11,7 +11,7 @@ public class Tableaux {
     
     public class Tableaux {
     
-        // Méthode pour afficher un tableau 2D
+        
         public void affiche(double[][] t) {
             for (double[] ligne : t) {
                 for (double val : ligne) {
@@ -19,16 +19,6 @@ public class Tableaux {
                 }
                 System.out.println();
             }
-        }
-    
-        public boolean regulier(double[][] t) {
-            int taille = t[0].length;
-            for (double[] ligne : t) {
-                if (ligne.length != taille) {
-                    return false;
-                }
-            }
-            return true;
         }
     
         public double[] sommeLignes(double[][] t) {
@@ -82,24 +72,3 @@ public class Tableaux {
         }
     }
     
-
-    public boolean regulier(double[][] t) {
-        int taille = t[0].length;
-        for (double[] ligne : t) {
-            if (ligne.length != taille) {
-                return false;
-            }
-        }
-        return true;
-    }
-
-    public double[] sommeLignes(double[][] t) {
-        double[] sommes = new double[t.length];
-        for (int i = 0; i < t.length; i++) {
-            for (double val : t[i]) {
-                sommes[i] += val;
-            }
-        }
-        return sommes;
-    }
-
